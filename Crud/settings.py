@@ -10,6 +10,8 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.2/ref/settings/
 """
 
+import os
+
 from pathlib import Path
 
 from django.urls import reverse_lazy
@@ -127,12 +129,10 @@ LOGOUT_REDIRECT_URL = reverse_lazy('login')
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
 
-STATIC_ROOT = STATICFILES_DIRS = [
-    BASE_DIR / "CrudApp/staticfiles"
-]
+STATIC_ROOT = os.path.join(BASE_DIR, 'CrudApp/staticfiles')
 STATIC_URL = '/static/'
 STATICFILES_DIRS = [
-    BASE_DIR / "CrudApp/static/css"
+    os.path.join(BASE_DIR,"CrudApp/static/css")
 ]
 
 
