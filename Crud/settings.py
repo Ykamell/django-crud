@@ -129,7 +129,7 @@ LOGOUT_REDIRECT_URL = reverse_lazy('login')
 
 STATIC_URL = '/static/'
 STATICFILES_DIRS = [
-    "D:/yiseth/crud/Crud/CrudApp/static/css"
+    BASE_DIR / "static/css"
 ]
 
 
