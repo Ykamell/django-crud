@@ -1,0 +1,202 @@
+.container {
+    background-color: #b7e0e9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box {
+    width: 70%;
+    height: 70%;
+    border-radius: 12px;
+    background-color: white;
+}
+
+.box2 {
+    width: 100%;
+    height: 70%;
+    border-radius: 12px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header {
+    width: 100%;
+    height: 10%;
+    border-radius: 12px 12px 0 0;
+    background-color: #15436b;
+}
+
+.list{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    float:left;
+    clear:none;
+    border-top-left-radius: 12px;
+    width: 15%;
+    height: 87%;
+    background-color: #8c9cab;
+    border: 0.2vw solid #708599;
+    border-right: 0.1vw;   
+    transition-duration: 0.4s;
+    color: white;
+    font-size: 1.3vw;
+    cursor: pointer;
+}
+
+.list:hover{
+    background-color: #708599;
+}
+
+.create{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    float:left;
+    clear:none;
+    width: 15%;
+    height: 87%;
+    background-color: #8c9cab;
+    border: 0.2vw solid #708599;
+    border-right: 0.1vw;
+    transition-duration: 0.4s;
+    color: white;
+    font-size: 1.3vw;
+    cursor: pointer;
+}
+
+.create:hover{
+    background-color: #708599;
+}
+
+table { 
+    margin-left: auto;
+    margin-right: auto;
+    border-collapse: collapse; 
+    width: 95%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+table thead th {
+    border-bottom: 1px solid #000; 
+}
+
+table tbody tr{ 
+    text-align: center; 
+}
+
+td {
+    padding-top: 0.5vw;
+    padding-bottom: 0.5vw;
+    border-bottom: 1px solid rgb(192, 191, 191); 
+}
+
+h3 {
+    margin-left: 2.5%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.exit{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    float:left;
+    clear:none;
+    width: 15%;
+    height: 87%;
+    background-color: #8c9cab;
+    border: 0.2vw solid #708599;
+    border-right: 0.1vw;
+    transition-duration: 0.4s;
+    color: white;
+    font-size: 1.3vw;
+    cursor: pointer;
+}
+
+.exit:hover{
+    background-color: #708599;
+}
+
+.label-input{
+    width: 100%;
+    display: inline-block;
+}
+
+form {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.3vw;
+    width: 90%;
+}
+
+input[type=text], input[type=number], input[type=email], input[type=date] {
+    width: 25%;
+    margin: 1vw;
+    padding: 0.5vw;
+}
+
+.btn{
+    text-align: center;
+    margin-top: 1vw;
+}
+
+.enter {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 30%;
+    height: 12%;
+    background-color: #8c9cab;
+    border-radius: 12px;
+    border: 0.2vw solid #708599;
+    transition-duration: 0.4s;
+    color: white;
+    font-size: 1vw;
+    cursor: pointer;
+}
+
+.enter:hover{
+    background-color: #708599;
+}
+
+label {
+    display: inline-block;
+    width: 10vw;
+    text-align: right;
+}
+
+.edit{
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 50%;
+    background-color: rgb(1, 92, 1);
+    border: 0.2vw solid rgb(1, 92, 1);
+    transition-duration: 0.4s;
+    color: white;
+    cursor: pointer;
+}
+
+.edit:hover{
+    background-color: rgb(1, 80, 1);
+}
+
+.delete{
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 50%;
+    background-color: rgb(168, 0, 0);
+    border: 0.2vw solid rgb(168, 0, 0);
+    transition-duration: 0.4s;
+    color: white;
+    cursor: pointer;
+}
+
+.delete:hover{
+    background-color: rgb(129, 0, 0);
+}

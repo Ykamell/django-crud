@@ -1,0 +1,22 @@
+{% extends 'crud.html' %}
+
+{% block body %}
+<h3> Crear nuevo usuario</h3>
+<div class="box2">
+    <form class= "form" method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+
+        {% for fields in form %}
+        <label><b>{{fields.label}}</b></label>
+        <input type="{{fields.field.widget.input_type}}" placeholder="Ingresar {{fields.label}}" name="{{fields.name}}" value="{{fields.value | default:''}}" required>
+        
+        {% endfor %}
+
+        <div class="btn">
+            <input class="enter" type="submit" value="Actualizar"></button>
+        </div>
+    </form>
+</div>
+
+
+{%endblock  %}
