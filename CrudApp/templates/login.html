@@ -1,0 +1,23 @@
+{% load static %}
+<html>
+    <head>
+        <title> Login </title>
+        <link rel="stylesheet" type="text/css" href="{% static '/css/login.css' %}"/> 
+    </head>
+    <body class="container">
+        <div class="box">
+            <form method="post" enctype="multipart/form-data">
+                {% csrf_token %}
+                <h3> Iniciar Sesión</h3>
+                <label><b>Usuario</b></label>
+                <input type="text" placeholder="Ingresar Usuario" name="username" required>
+
+                <label><b>Contraseña</b></label>
+                <input type="password" placeholder="Ingresar Contraseña" name="password" required>
+                <div class="btn">
+                    <input class="enter" type="submit" value="Ingresar"></button>
+                </div>
+            </form>
+        </div>
+	</body>
+</html>
