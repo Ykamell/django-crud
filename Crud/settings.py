@@ -128,11 +128,11 @@ LOGOUT_REDIRECT_URL = reverse_lazy('login')
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
 
 STATIC_ROOT = STATICFILES_DIRS = [
-    BASE_DIR / "staticfiles"
+    BASE_DIR / "CrudApp/staticfiles"
 ]
 STATIC_URL = '/static/'
 STATICFILES_DIRS = [
-    BASE_DIR / "static/css"
+    BASE_DIR / "CrudApp/static/css"
 ]
 
 
